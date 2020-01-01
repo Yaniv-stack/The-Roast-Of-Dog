@@ -1,0 +1,57 @@
+html {
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+
+body {
+  background: radial-gradient(
+      circle at 50% 0,
+      rgba(255, 0, 0, 0.5),
+      rgba(255, 0, 0, 0) 70.71%
+    ),
+    radial-gradient(
+      circle at 6.7% 75%,
+      rgba(0, 0, 255, 0.5),
+      rgba(0, 0, 255, 0) 70.71%
+    ),
+    radial-gradient(
+        circle at 93.3% 75%,
+        rgba(167, 15, 129, 0.651),
+        rgba(0, 255, 0, 0) 70.71%
+      )
+      beige;
+  border-radius: 50%;
+
+  background-attachment: fixed;
+}
+
+.albums {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1.5rem;
+}
+
+.album {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+
+.img {
+  width: 70%;
+}
+
+.album_name {
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.album_desc {
+  font-size: rem;
+  font-weight: 900;
+}
